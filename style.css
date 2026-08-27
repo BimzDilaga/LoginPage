@@ -59,6 +59,18 @@ label {
     font-size: 11px;
 }
 
+.gender {
+    display: flex;
+    position: left ;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.Registrasi {
+    color: rgb(0, 255, 72);
+}
+
 input {
     width: 100%;
     padding: 14px;
@@ -106,3 +118,4 @@ body::before {
 
     
 }
+

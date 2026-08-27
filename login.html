@@ -2,38 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Access Login</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="login-box">
-
         <h1>IDENTIFICATION</h1>
-
         <p>SYSTEM 01 / ACCESS</p>
 
-        <label>USER ID</label>
+        <label for="username">USER ID</label>
         <input
             type="text"
             placeholder="ENTER USER ID"
             required
+            id="username"
         >
 
-        <label>PASSWORD</label>
+        <label for="password">PASSWORD</label>
         <input
             type="password"
             placeholder="ENTER PASSWORD"
             required
+            id="password"
         >
 
-        <button>LOGIN</button>
+        <button type="button" onclick="cekLogin()">LOGIN</button>
 
         <small>● SYSTEM READY</small>
-
+        
+        <div class="Registrasi">
+            <p>
+                <a href="register.html">CREATE ACCOUNT</a>
+            </p>
+        </div>
     </div>
 
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

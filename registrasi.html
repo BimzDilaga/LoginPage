@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+
+        <h1>REGISTRATION</h1>
+        <p>SYSTEM 01 / ACCESS</p>
+
+        <label for="username">Create ID</label>
+        <input
+            type="text"
+            placeholder="ENTER USER ID"
+            required
+            id="username"
+        >
+
+        <label for="password">Create PASSWORD</label>
+        <input
+            type="password"
+            placeholder="Masukkan Password"
+            required
+            id="password"
+        >
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+            type="password"
+            placeholder="Masukkan Password"
+            required
+            id="confirmPassword"
+        >
+
+        <label for="tanggalLahir">Tanggal Lahir</label>
+        <input
+            type="date"
+            placeholder="Masukkan Tanggal Lahir"
+            required
+            id="tanggalLahir"
+        >
+
+        <label for="Jenis-Kelamin">Jenis Kelamin</label>
+        <div class="gender">
+            <input
+                type="radio"
+                name="Jenis-Kelamin"
+                value="Laki-laki"
+                id="Laki-Laki"
+                required
+            >
+            <label for="Laki-Laki">Laki Laki</label>
+
+            <input
+                type="radio"
+                name="Jenis-Kelamin"
+                value="Perempuan"
+                id="Perempuan"
+                required
+            >
+            <label for="Perempuan">Perempuan</label>
+        </div>
+       
+        <label for="kelas">Kelas</label>
+        <select id="kelas">
+            <option value="">-- Pilih Kelas --</option>
+            <option value="XI PPLG 3">XI PPLG 3</option>
+            <option value="XI PPLG 4">XI PPLG 4</option>
+            <option value="XI PPLG 5">XI PPLG 5</option>
+        </select>
+
+        <label for="alamat">Alamat</label>
+        <input
+            type="text"
+            placeholder="Masukkan Alamat"
+            required
+            id="alamat"
+        >
+
+        <button type="button" onclick="cekRegister()">Register</button>
+
+        <small>● SYSTEM READY</small>
+
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
